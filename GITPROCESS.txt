@@ -1,0 +1,17 @@
+//on the initial machine linked with the github repo
+
+echo "# CarSecurityWebsite" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/ElectrifyAfrica/CarSecurityWebsite.git
+git push -u origin main
+
+//on the collaborators machine
+
+git remote add origin https://github.com/ElectrifyAfrica/CarSecurityWebsite.git
+git fetch origin
+git pull origin main
+git branch -M main
+git push -u origin main
